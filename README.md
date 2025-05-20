@@ -23,6 +23,12 @@ Lets take a look inside the `src` folder
 ### Setup the project
 
  - Download this template from github and open it in your favourite text editor.
+
+ - Go inside the folder and execute following command
+    ```
+        npm install
+    ```
+    
  - In the root directory create a `.env` file and the follwing env variables 
     ```
         PORT=<port number of your choice>
@@ -59,7 +65,21 @@ Lets take a look inside the `src` folder
         }
 
     ```
+- If you want to do it manually by commands
+    ```
+        npm install sequelize : run inside the root of project
+        npm i mysql2 : run inside the root sequelize initof project
+        npm i sequelize-cli : run inside root of project
+            cd src : move to src
+        npx sequelize init : run inside src
+    ```
+-By executing `npx sequelize init` you will get migrations and seeders folder along with config.json inside config folder.
 
 - If you are setting up your dvelopment enviroment, then write the username if your DB, password of your DB and in dialect mention whatever DB you are using. For ex : mysql, mariadb etc.
 
 - If you are setting up test or Production enviroment, make sure you also replace the host with the hosted db url.
+
+- To run the server
+    ```
+        npm run dev
+    ```
