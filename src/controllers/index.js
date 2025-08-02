@@ -1,4 +1,5 @@
 
 module.exports = {
-    infoController: require('./info-controller')
+    infoController: require('./info-controller'),
+    EmailController : require('./email-controller')
 }
